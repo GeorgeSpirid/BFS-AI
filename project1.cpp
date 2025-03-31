@@ -125,17 +125,33 @@ bool BFS(int **matrix, int rows, int cols) {
 }
 
 int main() {
-    int rows0 = 3;
-    int cols0 = 4;
 
+    // int rows0 = 3;
+    // int cols0 = 4;
+
+    // int **matrix0 = new int*[rows0];
+    // for (int i = 0; i < rows0; ++i) {
+    //     matrix0[i] = new int[cols0];
+    // }
+
+    // matrix0[0][0] = 0; matrix0[0][1] = 0; matrix0[0][2] = 3; matrix0[0][3] = 1;
+    // matrix0[1][0] = 1; matrix0[1][1] = 3; matrix0[1][2] = 2; matrix0[1][3] = 0;
+    // matrix0[2][0] = 0; matrix0[2][1] = 0; matrix0[2][2] = 1; matrix0[2][3] = 0;
+
+    int rows0 = 5;
+    int cols0 = 6;
+    
     int **matrix0 = new int*[rows0];
     for (int i = 0; i < rows0; ++i) {
         matrix0[i] = new int[cols0];
     }
 
-    matrix0[0][0] = 0; matrix0[0][1] = 0; matrix0[0][2] = 3; matrix0[0][3] = 1;
-    matrix0[1][0] = 1; matrix0[1][1] = 3; matrix0[1][2] = 2; matrix0[1][3] = 0;
-    matrix0[2][0] = 0; matrix0[2][1] = 0; matrix0[2][2] = 1; matrix0[2][3] = 0;
+    matrix0[0][0] = 1; matrix0[0][1] = 0; matrix0[0][2] = 0; matrix0[0][3] = 3; matrix0[0][4] = 2; matrix0[0][5] = 0;
+    matrix0[1][0] = 0; matrix0[1][1] = 2; matrix0[1][2] = 0; matrix0[1][3] = 1; matrix0[1][4] = 0; matrix0[1][5] = 1;
+    matrix0[2][0] = 1; matrix0[2][1] = 3; matrix0[2][2] = 3; matrix0[2][3] = 2; matrix0[2][4] = 0; matrix0[2][5] = 0;
+    matrix0[3][0] = 1; matrix0[3][1] = 0; matrix0[3][2] = 1; matrix0[3][3] = 3; matrix0[3][4] = 3; matrix0[3][5] = 2;
+    matrix0[4][0] = 0; matrix0[4][1] = 2; matrix0[4][2] = 1; matrix0[4][3] = 0; matrix0[4][4] = 1; matrix0[4][5] = 0;
+
 
     BFS(matrix0, rows0, cols0);
 
